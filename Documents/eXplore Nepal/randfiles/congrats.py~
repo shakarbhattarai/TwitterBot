@@ -1,0 +1,89 @@
+def checkanswer(a):
+    import pygame
+    import sys
+    from pygame.locals import*
+    pygame.init()
+    screen=pygame.display.set_mode((800,600),0,32)
+    x=0
+   
+    while True:
+        color=(x,x,x)
+        screen.fill(color)
+        x+=0.1
+        if x>255:
+            x=0
+            if a==True:
+                correct()
+            else:
+                wrong()
+            
+        for event in pygame.event.get():
+            if event.type==QUIT or event.type==KEYDOWN and event.key==K_ESCAPE:
+                pygame.quit()
+                sys.exit()
+        pygame.display.update()
+
+def correct():
+    import pygame
+    import sys
+    from pygame.locals import*
+    from random import randrange
+    pygame.init()
+    image1=pygame.image.load("1.jpg").convert_alpha()
+    image2=pygame.image.load("2.jpg").convert_alpha()
+    image3=pygame.image.load("3.jpg").convert_alpha()
+    image4=pygame.image.load("4.jpg").convert_alpha()
+    image5=pygame.image.load("5.jpg").convert_alpha()
+    screen=pygame.display.set_mode((800,600),0,32)
+    c=randrange(5)
+    while True:
+       
+        if c==0:
+            image=image1
+        elif c==1:
+            image=image2
+        elif c==2:
+            image=image3
+        elif c==3:
+            image=image4
+        else:
+            image=image5
+        screen.blit(image,(0,0))
+        for event in pygame.event.get():
+            if event.type==QUIT or event.type==KEYDOWN and event.key==K_ESCAPE:
+                pygame.quit()
+                sys.exit()
+        pygame.display.update()
+    
+def wrong():
+    import pygame
+    import sys
+    from pygame.locals import*
+    from random import randrange
+    pygame.init()
+    image1=pygame.image.load("1.jpg").convert_alpha()
+    image2=pygame.image.load("2.jpg").convert_alpha()
+    image3=pygame.image.load("3.jpg").convert_alpha()
+    image4=pygame.image.load("4.jpg").convert_alpha()
+    image5=pygame.image.load("5.jpg").convert_alpha()
+    screen=pygame.display.set_mode((800,600),0,32)
+    c=randrange(5)
+    while True:
+       
+        if c==0:
+            image=image1
+        elif c==1:
+            image=image2
+        elif c==2:
+            image=image3
+        elif c==3:
+            image=image4
+        else:
+            image=image5
+        screen.blit(image,(0,0))
+        for event in pygame.event.get():
+            if event.type==QUIT or event.type==KEYDOWN and event.key==K_ESCAPE:
+                pygame.quit()
+                sys.exit()
+        pygame.display.update()
+checkanswer(True)

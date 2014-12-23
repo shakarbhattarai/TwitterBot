@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "mainmenu.py", line 158, in <module>
+    main()
+  File "mainmenu.py", line 57, in main
+    play()
+  File "mainmenu.py", line 89, in play
+    pratik(answer)
+  File "pratik.pyo", line 24, in pratik
+  File "beforeedr.pyo", line 43, in beforeedr
+IOError: unable to read font filename
+Traceback (most recent call last):
+  File "mainmenu.py", line 158, in <module>
+    main()
+  File "mainmenu.py", line 57, in main
+    play()
+  File "mainmenu.py", line 89, in play
+    pratik(answer)
+  File "pratik.pyo", line 486, in pratik
+  File "mwdr.pyo", line 67, in mwdr
+NameError: name 'rfandom' is not defined
+Traceback (most recent call last):
+  File "mainmenu.py", line 158, in <module>
+    main()
+  File "mainmenu.py", line 65, in main
+    end()
+  File "mainmenu.py", line 134, in end
+    font = pygame.font.SysFont('Arial',80)
+  File "pygame\sysfont.pyo", line 555, in SysFont
+  File "pygame\sysfont.pyo", line 520, in initsysfonts
+  File "pygame\sysfont.pyo", line 299, in initsysfonts_win32
+  File "pygame\sysfont.pyo", line 43, in _addfont
+MemoryError
+Traceback (most recent call last):
+  File "mainmenu.py", line 158, in <module>
+    main()
+  File "mainmenu.py", line 55, in main
+    if mousex in range(0,290) and mousey in range(400,600)  :
+MemoryError
+Exception MemoryError: MemoryError() in <module 'threading' from 'E:\a\mainmenu.exe\threading.pyo'> ignored
+Error in sys.exitfunc:
+MemoryError
+Traceback (most recent call last):
+  File "mainmenu.py", line 158, in <module>
+    main()
+  File "mainmenu.py", line 55, in main
+    if mousex in range(0,290) and mousey in range(400,600)  :
+MemoryError
+Exception MemoryError: MemoryError() in <module 'threading' from 'E:\a\mainmenu.exe\threading.pyo'> ignored
+Error in sys.exitfunc:
+MemoryError
