@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SMSApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="disclaimer">Only 140 characters supported!!</string>
+</resources>
